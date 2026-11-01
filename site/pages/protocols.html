@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3. Documenting Protocols &middot; GitHub for Healthcare Workers</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#start">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html"><span class="mark">AD</span>Asdale Dynamics, LLC</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="getting-started.html">Getting started</a></li>
+        <li><a href="account.html">Your account</a></li>
+        <li><a href="protocols.html" class="active">Protocols</a></li>
+        <li><a href="templates.html">Templates</a></li>
+        <li><a href="shift-sheets.html">Shift sheets</a></li>
+        <li><a href="privacy.html">Privacy &amp; safety</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="sidebar">
+    <h2>Manual</h2>
+    <ul>
+      <li><a href="getting-started.html">1. Getting started</a></li>
+      <li><a href="account.html">2. Your GitHub account</a></li>
+      <li><a href="protocols.html" class="active">3. Documenting protocols</a></li>
+      <li><a href="templates.html">4. Sharing templates</a></li>
+      <li><a href="shift-sheets.html">5. Version-controlling shift sheets</a></li>
+      <li><a href="privacy.html">6. Privacy &amp; safety</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+    </ul>
+  </aside>
+
+  <article id="start">
+    <header>
+      <p class="kicker">Chapter 3 &middot; Documenting protocols</p>
+      <h1>Documenting Protocols</h1>
+    </header>
+
+    <p>A protocol is a step-by-step guide for a clinical task &mdash; for
+    example, how to admit a patient, how to respond to a fall, or how to handle
+    a medication error. This chapter shows how to create a protocol repository,
+    write a protocol in plain text, save changes, and review the history.</p>
+    <p>GitHub stores documents as plain text files using a simple format called
+    Markdown. It looks like normal writing with a few shortcuts for headings
+    and lists. You do not need to learn programming.</p>
+
+    <h2>Step 1: Create a repository for your protocols</h2>
+    <ol class="steps">
+      <li>Sign in to GitHub.</li>
+      <li>Click the <strong>+</strong> icon (top right) &rarr; <strong>New repository</strong>.</li>
+      <li>Name it something clear, like <code>unit-protocols</code>.</li>
+      <li>Choose <strong>Public</strong> or <strong>Private</strong>. Private
+      means only people you invite can see it. For workplace documents, Private
+      is usually the safer choice.</li>
+      <li>Do <strong>not</strong> check any boxes about adding patient or workplace data.</li>
+      <li>Click <strong>Create repository</strong>.</li>
+    </ol>
+    <p>Your repository is now an empty folder on GitHub.</p>
+
+    <h2>Step 2: Add your first protocol file</h2>
+    <ol class="steps">
+      <li>On your repository page, click <strong>Add file</strong> &rarr;
+      <strong>Create new file</strong>.</li>
+      <li>Name the file with <code>.md</code> at the end, for example
+      <code>fall-response.md</code>. The <code>.md</code> tells GitHub it is a Markdown document.</li>
+      <li>Write the protocol in plain English.</li>
+      <li>Under <strong>Commit changes</strong>, type a short note like "Add fall response protocol."</li>
+      <li>Click <strong>Commit changes</strong> twice to confirm.</li>
+    </ol>
+
+    <pre><code># Fall Response Protocol
+
+## Purpose
+What to do when a patient falls.
+
+## When to use
+Any time a patient is found on the floor or reports a fall.
+
+## Steps
+1. Stay with the patient. Do not move them unless they are in danger.
+2. Call for help according to your unit's procedure.
+3. Check for injuries: head, hips, wrists, and any pain.
+4. Report the fall to the charge nurse.
+5. Document the fall in the incident reporting system.
+
+## Notes
+Never include patient names or room numbers in this file.</code></pre>
+
+    <p>Your protocol is now saved, with a date, time, and your username attached.</p>
+
+    <h2>Step 3: Edit a protocol later</h2>
+    <ol class="steps">
+      <li>Go to the file in your repository.</li>
+      <li>Click the pencil icon (Edit file).</li>
+      <li>Make your changes.</li>
+      <li>Under <strong>Commit changes</strong>, write what changed &mdash; for
+      example, "Updated step 3 to include wrist check."</li>
+      <li>Click <strong>Commit changes</strong>.</li>
+    </ol>
+    <p>GitHub saves the old version too. You can always go back.</p>
+
+    <h2>Step 4: Look at older versions</h2>
+    <ol class="steps">
+      <li>On your repository page, click the <strong>commits</strong> link (it shows a number like "3 commits").</li>
+      <li>Click any commit to see what changed in that version.</li>
+      <li>To restore an older version, open that commit, click <strong>Browse files</strong>, open the file, and save it again as a new commit.</li>
+    </ol>
+
+    <h2>Step 5: Invite a teammate (optional)</h2>
+    <p>If you want a coworker to help maintain protocols:</p>
+    <ol class="steps">
+      <li>Go to your repository &rarr; <strong>Settings</strong> &rarr; <strong>Collaborators</strong>.</li>
+      <li>Click <strong>Add people</strong> and type their GitHub username.</li>
+      <li>Choose <strong>Read</strong> (can view only) or <strong>Write</strong> (can edit).</li>
+      <li>Your coworker accepts the invitation by email.</li>
+    </ol>
+    <p>Only invite people you trust, and remind them never to add patient
+    information.</p>
+
+    <div class="callout privacy">
+      <div class="title">Privacy checklist for protocols</div>
+      <ul>
+        <li>No patient names, initials, or nicknames.</li>
+        <li>No medical record numbers, dates of birth, or dates of service.</li>
+        <li>No room numbers or unit-specific details that could identify a patient.</li>
+        <li>No photos of patients or their wristbands.</li>
+        <li>If an example is needed, make up a clearly fake patient (e.g., "Patient J., a fictional 65-year-old") and label it as an example.</li>
+      </ul>
+      <p style="margin:0">Protocols describe <em>how work is done</em>, not
+      <em>who a patient is</em>. Keep it that way.</p>
+    </div>
+
+    <p style="margin-top:26px;color:var(--muted);font-size:0.92rem">
+      Produced by <strong>Asdale Dynamics, LLC</strong>.
+    </p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><strong>Asdale Dynamics, LLC</strong> &middot; GitHub for Healthcare Workers: A Beginner Manual &middot; MIT License &middot; Copyright (c) 2026 Asdale Dynamics, LLC</p>
+    <p>Education only. Not medical advice. <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a></p>
+  </div>
+</footer>
+</body>
+</html>

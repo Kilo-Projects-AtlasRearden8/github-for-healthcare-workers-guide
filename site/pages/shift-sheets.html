@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5. Version-Controlling Shift Sheets &middot; GitHub for Healthcare Workers</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#start">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html"><span class="mark">AD</span>Asdale Dynamics, LLC</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="getting-started.html">Getting started</a></li>
+        <li><a href="account.html">Your account</a></li>
+        <li><a href="protocols.html">Protocols</a></li>
+        <li><a href="templates.html">Templates</a></li>
+        <li><a href="shift-sheets.html" class="active">Shift sheets</a></li>
+        <li><a href="privacy.html">Privacy &amp; safety</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="sidebar">
+    <h2>Manual</h2>
+    <ul>
+      <li><a href="getting-started.html">1. Getting started</a></li>
+      <li><a href="account.html">2. Your GitHub account</a></li>
+      <li><a href="protocols.html">3. Documenting protocols</a></li>
+      <li><a href="templates.html">4. Sharing templates</a></li>
+      <li><a href="shift-sheets.html" class="active">5. Version-controlling shift sheets</a></li>
+      <li><a href="privacy.html">6. Privacy &amp; safety</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+    </ul>
+  </aside>
+
+  <article id="start">
+    <header>
+      <p class="kicker">Chapter 5 &middot; Version-controlling shift sheets</p>
+      <h1>Version-Controlling Shift Sheets</h1>
+    </header>
+
+    <p>Shift sheets show who is working when. They change constantly &mdash;
+    someone calls out, a shift gets swapped, a new hire starts. This chapter
+    shows how to use GitHub to keep every version of a shift sheet, see what
+    changed, and go back if a mistake is made.</p>
+    <p>You can keep shift sheets as plain text (Markdown) files or as
+    spreadsheet files (Excel/CSV). This chapter shows both.</p>
+
+    <h2>Option A: Shift sheets as plain text files</h2>
+    <p>Plain text files are easiest to read on GitHub and show changes clearly.</p>
+
+    <h3>Step 1: Create the shift sheet</h3>
+    <ol class="steps">
+      <li>In your repository (or a new one called <code>shift-sheets</code>),
+      click <strong>Add file</strong> &rarr; <strong>Create new file</strong>.</li>
+      <li>Name it <code>2026-11-shift-sheet.md</code>.</li>
+      <li>Write the schedule.</li>
+      <li>Commit the file.</li>
+    </ol>
+
+    <pre><code># November 2026 Shift Sheet — West Wing
+
+## Week of November 2
+
+| Date | Day shift | Night shift |
+|------|-----------|-------------|
+| Nov 2 | A. Rivera | O. Patel |
+| Nov 3 | S. Chen | J. Okoye |
+| Nov 4 | L. Dubois | M. Torres |
+
+## Notes
+- A. Rivera is on vacation Nov 7–9.
+- Float pool covers Nov 5 night shift.</code></pre>
+
+    <h3>Step 2: Update the sheet each week</h3>
+    <ol class="steps">
+      <li>Open the file &rarr; click the pencil icon.</li>
+      <li>Make your changes.</li>
+      <li>Commit with a note like "Updated night shift for Nov 5 — float pool."</li>
+      <li>Repeat each week.</li>
+    </ol>
+    <p>Because every commit is saved, you can always see last month's schedule
+    if you need to check who worked a particular shift.</p>
+
+    <h2>Option B: Shift sheets as spreadsheet files</h2>
+    <p>If your team prefers Excel or CSV, you can commit those files too.
+    GitHub will store them, but it cannot show you exactly which cell changed
+    &mdash; it will only tell you the file changed.</p>
+
+    <h3>Step 1: Save your spreadsheet</h3>
+    <p>Save your shift sheet as a CSV file (File &rarr; Save As &rarr; CSV) so
+    it is a plain text spreadsheet. Name it <code>shift-sheet-2026-11.csv</code>.</p>
+
+    <h3>Step 2: Upload it</h3>
+    <ol class="steps">
+      <li>In your repository, click <strong>Add file</strong> &rarr;
+      <strong>Upload files</strong>.</li>
+      <li>Drag in your CSV file.</li>
+      <li>Commit the file.</li>
+    </ol>
+
+    <h3>Step 3: Replace it next time</h3>
+    <p>When the schedule changes, upload the new CSV with the same filename.
+    GitHub keeps both versions. To see an older version:</p>
+    <ol class="steps">
+      <li>Click <strong>commits</strong> on the repository page.</li>
+      <li>Click the commit you want.</li>
+      <li>Click the CSV file to download that older version.</li>
+    </ol>
+
+    <h2>Step 4: Compare versions</h2>
+    <ol class="steps">
+      <li>Go to your repository &rarr; <strong>commits</strong>.</li>
+      <li>Click any commit to see what changed.</li>
+      <li>For text files, GitHub highlights added lines in green and removed lines in red. This makes it easy to see who was added or removed from a shift.</li>
+    </ol>
+
+    <h2>Step 5: Fixing a mistake</h2>
+    <p>If someone accidentally deletes a name or changes the wrong date:</p>
+    <ol class="steps">
+      <li>Open the commit before the mistake.</li>
+      <li>Click <strong>Browse files</strong> &rarr; open the shift sheet.</li>
+      <li>Copy the contents.</li>
+      <li>Open the current file &rarr; click Edit &rarr; paste the old contents back in.</li>
+      <li>Commit with a note like "Restored shift sheet from before Nov 4 error."</li>
+    </ol>
+
+    <div class="callout privacy">
+      <div class="title">Privacy checklist for shift sheets</div>
+      <p>Shift sheets contain staff information, which is workplace data &mdash;
+      handle it carefully:</p>
+      <ul>
+        <li>Keep the shift sheet repository <strong>Private</strong>.</li>
+        <li>Invite only teammates who need to see schedules.</li>
+        <li>Do not include staff phone numbers, home addresses, or personal contact details.</li>
+        <li>Do not include reasons for time off (e.g., "maternity leave" or "sick leave"). Use blank cells or "off" instead.</li>
+        <li>Never include patient names or assignments that link a specific staff member to a specific patient. A shift sheet shows <em>who is working</em>, not <em>which patients they are caring for</em>.</li>
+      </ul>
+      <p style="margin:0">If you are unsure whether something belongs in GitHub,
+      ask your manager or your workplace's privacy officer first.</p>
+    </div>
+
+    <p style="margin-top:26px;color:var(--muted);font-size:0.92rem">
+      Produced by <strong>Asdale Dynamics, LLC</strong>.
+    </p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><strong>Asdale Dynamics, LLC</strong> &middot; GitHub for Healthcare Workers: A Beginner Manual &middot; MIT License &middot; Copyright (c) 2026 Asdale Dynamics, LLC</p>
+    <p>Education only. Not medical advice. <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a></p>
+  </div>
+</footer>
+</body>
+</html>

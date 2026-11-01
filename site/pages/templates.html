@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4. Sharing Templates &middot; GitHub for Healthcare Workers</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#start">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="../index.html"><span class="mark">AD</span>Asdale Dynamics, LLC</a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="getting-started.html">Getting started</a></li>
+        <li><a href="account.html">Your account</a></li>
+        <li><a href="protocols.html">Protocols</a></li>
+        <li><a href="templates.html" class="active">Templates</a></li>
+        <li><a href="shift-sheets.html">Shift sheets</a></li>
+        <li><a href="privacy.html">Privacy &amp; safety</a></li>
+        <li><a href="glossary.html">Glossary</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="sidebar">
+    <h2>Manual</h2>
+    <ul>
+      <li><a href="getting-started.html">1. Getting started</a></li>
+      <li><a href="account.html">2. Your GitHub account</a></li>
+      <li><a href="protocols.html">3. Documenting protocols</a></li>
+      <li><a href="templates.html" class="active">4. Sharing templates</a></li>
+      <li><a href="shift-sheets.html">5. Version-controlling shift sheets</a></li>
+      <li><a href="privacy.html">6. Privacy &amp; safety</a></li>
+      <li><a href="glossary.html">Glossary</a></li>
+    </ul>
+  </aside>
+
+  <article id="start">
+    <header>
+      <p class="kicker">Chapter 4 &middot; Sharing templates</p>
+      <h1>Sharing Templates</h1>
+    </header>
+
+    <p>Templates are documents your team reuses over and over &mdash; shift
+    report sheets, orientation checklists, equipment sign-out sheets, and
+    on-call contact lists. This chapter shows how to create templates, share
+    them with colleagues, and let people copy them without changing the
+    original.</p>
+
+    <h2>Step 1: Create a template repository</h2>
+    <ol class="steps">
+      <li>Sign in to GitHub.</li>
+      <li>Click the <strong>+</strong> icon &rarr; <strong>New repository</strong>.</li>
+      <li>Name it something like <code>unit-templates</code>.</li>
+      <li>Choose <strong>Private</strong> if the templates contain internal workplace info.</li>
+      <li>Click <strong>Create repository</strong>.</li>
+    </ol>
+
+    <h2>Step 2: Add a template file</h2>
+    <p>Use the same steps as Chapter 3:</p>
+    <ol class="steps">
+      <li>Click <strong>Add file</strong> &rarr; <strong>Create new file</strong>.</li>
+      <li>Name it, for example <code>shift-report-template.md</code>.</li>
+      <li>Write the template with blank sections for filling in.</li>
+      <li>Commit the file.</li>
+    </ol>
+
+    <pre><code># Shift Report Template
+
+## Shift details
+Date: ____________
+Shift: Day / Evening / Night
+Unit: ____________
+Reported by: ____________
+
+## Patients
+- Room ____: ____________
+- Room ____: ____________
+
+## Tasks to complete
+- [ ] ____________
+- [ ] ____________
+
+## Handoff notes
+____________</code></pre>
+
+    <h2>Step 3: Mark the repository as a template (optional)</h2>
+    <p>GitHub has a "template repository" feature that lets others start a new
+    repo from yours:</p>
+    <ol class="steps">
+      <li>Go to your repository &rarr; <strong>Settings</strong>.</li>
+      <li>Under <strong>Template repository</strong>, check the box
+      <strong>Template repository</strong>.</li>
+      <li>Anyone with access can now click <strong>Use this template</strong> to make their own copy.</li>
+    </ol>
+    <p>If your repository is Private, only people you invite can use it as a
+    template. That is usually what you want for workplace templates.</p>
+
+    <h2>Step 4: Share with teammates</h2>
+    <ol class="steps">
+      <li>Go to <strong>Settings</strong> &rarr; <strong>Collaborators</strong>.</li>
+      <li>Add coworkers with <strong>Read</strong> access.</li>
+      <li>Tell them where to find the templates:
+      <code>github.com/your-username/unit-templates</code>.</li>
+    </ol>
+
+    <h2>Step 5: How teammates use a template</h2>
+    <p>A teammate can:</p>
+    <ol class="steps">
+      <li>Open the template file on GitHub.</li>
+      <li>Click the <strong>Copy</strong> button above the file contents.</li>
+      <li>Paste it into a document, an email, or their own GitHub repository.</li>
+      <li>Fill in the blanks for their own shift.</li>
+    </ol>
+    <p>The original template on GitHub stays untouched, so everyone always
+    starts from the same clean version.</p>
+
+    <h2>Updating a template</h2>
+    <p>When you improve a template:</p>
+    <ol class="steps">
+      <li>Edit the original file in the template repository.</li>
+      <li>Commit the change with a note like "Added medication check section."</li>
+    </ol>
+    <p>Teammates who already copied the template will not see the update
+    automatically &mdash; they copy the new version next time they need it.</p>
+
+    <div class="callout privacy">
+      <div class="title">Privacy checklist for templates</div>
+      <ul>
+        <li>Templates should contain blank fields, not real patient data.</li>
+        <li>Do not include actual shift schedules with staff names unless the repository is Private and your workplace allows it.</li>
+        <li>Do not include phone numbers or contact info for real patients.</li>
+        <li>If a template references a real form number (e.g., "Incident Form #104"), that is usually fine &mdash; it is not patient information.</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:26px;color:var(--muted);font-size:0.92rem">
+      Produced by <strong>Asdale Dynamics, LLC</strong>.
+    </p>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p><strong>Asdale Dynamics, LLC</strong> &middot; GitHub for Healthcare Workers: A Beginner Manual &middot; MIT License &middot; Copyright (c) 2026 Asdale Dynamics, LLC</p>
+    <p>Education only. Not medical advice. <a href="https://dylanasdale.github.io" target="_blank" rel="noopener">dylanasdale.github.io</a></p>
+  </div>
+</footer>
+</body>
+</html>
