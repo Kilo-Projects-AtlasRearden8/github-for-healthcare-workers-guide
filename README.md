@@ -5,7 +5,7 @@ GitHub to document protocols, share templates, and version-control shift
 sheets. No coding required. Privacy-safe by design.
 
 Written in the spirit of Dylan Asdale's *The Massive AI Manual* and the
-ASDALE DYNAMICS, LLC hub site (dylanasdale.github.io): AI and tech explained
+ASDALE DYNAMICS, LLC hub site (dylanasdale.github.io): tech explained
 "like a friend would" — clear, warm, never condescending.
 
 ## Who this is for
@@ -14,6 +14,22 @@ Nurses, medical assistants, care coordinators, administrators, and anyone else
 working in healthcare who keeps paper or digital documents and wants a safer,
 more organized way to track changes. You do not need to be technical. You do
 not need to write code.
+
+If you have ever looked at a folder full of files named
+`Protocol_FINAL_v2_REALLYFINAL.docx` and wondered which one is actually
+current, this manual is for you.
+
+## What you will be able to do
+
+By working through this manual, you will be able to:
+
+- Set up a GitHub account without sharing workplace or patient details
+- Create a repository for clinical protocols and save every change you make
+- Share blank templates (shift reports, checklists, sign-out sheets) with your
+  team without anyone accidentally overwriting the original
+- Keep a full history of shift sheets, see exactly what changed, and go back to
+  an older version if a mistake is made
+- Decide what is safe to put on GitHub — and what never belongs there
 
 ## What is inside
 
@@ -32,11 +48,16 @@ browser. No server, no install, no internet required once you have the files.
 
 ## Privacy and safety (read first)
 
-This guide is for education and organization only. It is not medical advice.
+This guide is for education and organization only. It is not medical advice,
+and it is not a substitute for your workplace's policies, HIPAA training, or
+privacy officer.
+
 **Never put patient names, medical record numbers, dates of birth, or any
 other patient information in GitHub.** GitHub is not a HIPAA-compliant place
-to store health records. See `docs/06-privacy-and-safety.md` for the full
-privacy rules.
+to store health records — not even in a Private repository.
+
+Read `docs/06-privacy-and-safety.md` for the full privacy rules before you
+upload any workplace document.
 
 ## How to use this manual
 
@@ -49,7 +70,8 @@ privacy rules.
 
 This manual was produced by **Asdale Dynamics, LLC** (Indiana, formed October
 2026), a beginner-friendly AI education publisher focused on books, guides,
-and practical tools. Find more at dylanasdale.github.io.
+and practical tools that the LLC can publish or sell. Find more at
+dylanasdale.github.io.
 
 ## License
 

@@ -11,6 +11,7 @@ templates, version-controlling shift sheets.
 
 - `README.md` — overview, contents, privacy notice, Asdale Dynamics, LLC credit, MIT license pointer
 - `LICENSE` — MIT License, copyright line exactly `Copyright (c) 2026 Asdale Dynamics, LLC`
+- `STATUS.md` — this file
 - `docs/` — Markdown manual (7 files):
   - `01-getting-started.md` — what GitHub is, repos/commits/branches in plain English
   - `02-github-account.md` — creating an account, 2FA, profile privacy
@@ -35,9 +36,9 @@ on your computer. No code is required to use the manual itself.
 
 ## Verification results
 
-Ran `python3 /tmp/kilo/verify_guide.py` (220 checks): **220/220 passed**.
+Ran `python3 /tmp/kilo/verify_guide.py` (223 checks): **223/223 passed**.
 
-- All expected files exist (`docs/`, `site/`, `LICENSE`, `README.md`)
+- All expected files exist (`docs/`, `site/`, `LICENSE`, `README.md`, `STATUS.md`)
 - LICENSE contains the exact copyright line: `Copyright (c) 2026 Asdale Dynamics, LLC`
 - README credits Asdale Dynamics, LLC
 - All 8 HTML pages parse cleanly (no unclosed tags)
